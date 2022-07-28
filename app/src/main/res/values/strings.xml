@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Truth or Dare</string>
+    <string name="tod_players_header">Players:</string>
+    <string name="tod_player_name">Player name</string>
+    <string name="tod_truth">Truth</string>
+    <string name="tod_or">OR</string>
+    <string name="tod_dare">Dare</string>
+    <string name="tod_truth_or_dare">Truth or Dare</string>
+    <string name="tod_task">Task</string>
+    <string name="tod_refresh">Update</string>
+    <string name="tod_continue">Continue</string>
+    <string name="tod_add_player">Add</string>
+    <string name="tod_start_game">Start</string>
+    <string name="tod_enter_name">Enter your name</string>
+    <string name="start">Start</string>
+    <string name="alert_dialog_title">Oops…</string>
+    <string name="alert_dialog_less_than_two_players">There must be at least 2 players to start the game</string>
+    <string name="alert_dialog_unnamed_players">To start the game you need to give names to all players</string>
+    <string name="alert_dialog_btn">OK</string>
+
+</resources>

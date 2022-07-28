@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="android.example.truthordare.fragments.MenuFragment"
+        android:label="MenuFragment" >
+        <action
+            android:id="@+id/action_menuFragment_to_playersFragment"
+            app:destination="@id/playersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playersFragment"
+        android:name="android.example.truthordare.fragments.PlayersFragment"
+        android:label="PlayersFragment" >
+        <action
+            android:id="@+id/action_playersFragment_to_choiceFragment"
+            app:destination="@id/choiceFragment" />
+        <action
+            android:id="@+id/action_playersFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/choiceFragment"
+        android:name="android.example.truthordare.fragments.ChoiceFragment"
+        android:label="ChoiceFragment" >
+        <action
+            android:id="@+id/action_choiceFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_choiceFragment_to_playersFragment"
+            app:destination="@id/playersFragment" />
+        <action
+            android:id="@+id/action_choiceFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="android.example.truthordare.fragments.GameFragment"
+        android:label="GameFragment" >
+        <argument
+            android:name="truth_or_dare"
+            app:argType="string"/>
+        <argument
+            android:name="questions_actions"
+            app:argType="string"/>
+        <argument
+            android:name="player_name"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_gameFragment_to_choiceFragment"
+            app:destination="@id/choiceFragment" />
+        <action
+            android:id="@+id/action_gameFragment_to_playersFragment"
+            app:destination="@id/playersFragment" />
+        <action
+            android:id="@+id/action_gameFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+</navigation>

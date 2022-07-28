@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <TextView
+        android:id="@+id/tv_title_player_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/tod_player_name"
+        android:background="@color/blue"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/days_one"
+        app:layout_constraintBottom_toTopOf="@+id/gl_upper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/im_go_to_menu"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_home"
+        app:layout_constraintBottom_toTopOf="@+id/gl_upper"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/im_players"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_peoples"
+        app:layout_constraintBottom_toTopOf="@+id/gl_upper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_upper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <Button
+        android:id="@+id/btn_truth"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/tod_truth"
+        android:fontFamily="@font/days_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/gl_upper" />
+
+    <TextView
+        android:id="@+id/tv_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/tod_or"
+        android:fontFamily="@font/days_one"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_truth" />
+
+    <Button
+        android:id="@+id/btn_dare"
+        android:layout_width="250dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:text="@string/tod_dare"
+        android:fontFamily="@font/days_one"
+        android:backgroundTint="@color/blue"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_or" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
